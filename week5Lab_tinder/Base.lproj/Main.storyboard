@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES" initialViewController="k0M-x0-b1T">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Grey View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GreyViewController" customModule="week5Lab_tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.9571623322147651" green="0.9571623322147651" blue="0.9571623322147651" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="lkZ-Fq-bff" appends="YES" id="s3u-i7-nzG"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <segue destination="Sew-4W-oZj" kind="modal" identifier="pinchSegue" id="m1o-1W-Dhj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="lkZ-Fq-bff">
+                    <connections>
+                        <action selector="onPinchGesture:" destination="BYZ-38-t0r" id="X3q-oE-pXH"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="73.5" y="136.5"/>
+        </scene>
+        <!--Green View Controller-->
+        <scene sceneID="H34-2n-WCA">
+            <objects>
+                <viewController id="Sew-4W-oZj" customClass="GreenViewController" customModule="week5Lab_tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LCJ-XI-SGl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gR0-dB-2VD">
+                                <rect key="frame" x="92" y="242" width="190" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.95716233220000002" green="0.95716233220000002" blue="0.95716233220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="didPressDismiss:" destination="Sew-4W-oZj" eventType="touchUpInside" id="VZY-eV-dmU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59476125240325928" green="0.85472029447555542" blue="0.81716322898864746" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHN-LV-4HU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="563" y="135"/>
+        </scene>
+        <!--Cards View Controller-->
+        <scene sceneID="Edr-hT-VGB">
+            <objects>
+                <viewController id="k0M-x0-b1T" customClass="CardsViewController" customModule="week5Lab_tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3sw-bs-a6d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="nav_bar" id="8d7-W8-lpF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="action_buttons" id="Ver-Bm-gF8">
+                                <rect key="frame" x="0.0" y="503" width="375" height="118"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="ryan" id="aM6-TO-XCy">
+                                <rect key="frame" x="22" y="108" width="330" height="342"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="W1H-lm-LeA" appends="YES" id="g4Y-Vc-msa"/>
+                                    <outletCollection property="gestureRecognizers" destination="Wdc-9g-d22" appends="YES" id="iHz-Fo-D7W"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainPhoto" destination="aM6-TO-XCy" id="AZS-K1-3DD"/>
+                        <segue destination="0gn-Sf-5ta" kind="modal" identifier="profileSegue" id="XQa-hm-Hpd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwE-tG-qJA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="W1H-lm-LeA">
+                    <connections>
+                        <action selector="didPanMainPhoto:" destination="k0M-x0-b1T" id="D7z-h0-Sic"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="Wdc-9g-d22">
+                    <connections>
+                        <action selector="didTapSegue:" destination="k0M-x0-b1T" id="DLH-1o-Bdz"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="617.5" y="1090.5"/>
+        </scene>
+        <!--Cards Profile View Controller-->
+        <scene sceneID="Mn8-WI-SPi">
+            <objects>
+                <viewController id="0gn-Sf-5ta" customClass="CardsProfileViewController" customModule="week5Lab_tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bwd-UR-SLs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" misplaced="YES" image="nav_bar2" id="iP5-8v-8ks">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" id="Ace-bw-fN0">
+                                <rect key="frame" x="0.0" y="100" width="375" height="432"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="77A-bz-Ps7">
+                                <rect key="frame" x="0.0" y="32" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="didPressDone:" destination="0gn-Sf-5ta" eventType="touchUpInside" id="l7i-ok-LAL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="profilePhotoImage" destination="Ace-bw-fN0" id="zHw-LQ-8nf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6bs-I7-NN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1169.5" y="1090.5"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="Mzu-1n-gOD">
+            <objects>
+                <viewController id="QgN-eE-7sL" customClass="FeedViewController" customModule="week5Lab_tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hTr-Sp-CBw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="biker" id="XfH-ea-TIY">
+                                <rect key="frame" x="32" y="180" width="94" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Kkz-aT-kaz" appends="YES" id="aah-2Q-V3B"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cat" id="H1g-8i-K8P">
+                                <rect key="frame" x="140" y="180" width="94" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xfk-zb-Hux" appends="YES" id="9RP-9h-8b1"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="donkey" id="smR-Oo-EU2">
+                                <rect key="frame" x="32" y="319" width="94" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Z1K-Cg-dGj" appends="YES" id="7H1-wx-bls"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="farm" id="3LI-pd-XMQ">
+                                <rect key="frame" x="140" y="319" width="94" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hHn-lE-SiG" appends="YES" id="MhU-f9-XWK"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cow" id="cEc-1g-RSR">
+                                <rect key="frame" x="254" y="180" width="94" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="n1K-C7-9nF" appends="YES" id="hnW-nS-AF1"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="pig" id="jW4-fk-3G7">
+                                <rect key="frame" x="254" y="319" width="94" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="hCv-JW-cqw" appends="YES" id="5jR-YH-3ZY"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="NcH-Tb-ZfP" kind="modal" identifier="detailSegue" id="A3f-vR-PJy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NTT-Yl-Lm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Kkz-aT-kaz">
+                    <connections>
+                        <action selector="onTapGesture:" destination="QgN-eE-7sL" id="41J-qJ-RMV"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="xfk-zb-Hux">
+                    <connections>
+                        <action selector="onTapGesture:" destination="QgN-eE-7sL" id="2my-Vm-R6q"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="n1K-C7-9nF">
+                    <connections>
+                        <action selector="onTapGesture:" destination="QgN-eE-7sL" id="seV-41-eyG"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Z1K-Cg-dGj">
+                    <connections>
+                        <action selector="onTapGesture:" destination="QgN-eE-7sL" id="8CZ-Bz-bry"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hHn-lE-SiG">
+                    <connections>
+                        <action selector="onTapGesture:" destination="QgN-eE-7sL" id="fDz-dD-uLR"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="hCv-JW-cqw">
+                    <connections>
+                        <action selector="onTapGesture:" destination="QgN-eE-7sL" id="fyX-nM-cap"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1119" y="137"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="ONx-WA-DLe">
+            <objects>
+                <viewController id="NcH-Tb-ZfP" customClass="DetailViewController" customModule="week5Lab_tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NlD-x5-1dP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="Xmh-dq-x1B">
+                                <rect key="frame" x="35" y="59" width="311" height="415"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gM2-8b-jjX">
+                                <rect key="frame" x="305" y="26" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="didPressDone:" destination="NcH-Tb-ZfP" eventType="touchUpInside" id="sZg-FI-d0v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Xmh-dq-x1B" id="zTg-x4-6U0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73B-aY-WcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1656.5" y="134.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="biker" width="600" height="600"/>
+        <image name="cat" width="600" height="600"/>
+        <image name="cow" width="600" height="600"/>
+        <image name="donkey" width="600" height="600"/>
+        <image name="farm" width="600" height="600"/>
+        <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
+        <image name="pig" width="600" height="600"/>
+        <image name="ryan" width="224" height="257"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>
