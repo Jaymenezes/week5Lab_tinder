@@ -10,7 +10,7 @@ import UIKit
 
 class BaseTransition: NSObject, UIViewControllerTransitioningDelegate, UIViewControllerAnimatedTransitioning {
     
-    var duration: TimeInterval = 0.4
+    var duration: TimeInterval = 0.1
     var isPresenting: Bool = true
     var isInteractive: Bool = false
     var transitionContext: UIViewControllerContextTransitioning!

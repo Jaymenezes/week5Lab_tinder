@@ -12,6 +12,7 @@ class CardsProfileViewController: UIViewController {
 
     @IBOutlet weak var profilePhotoImage: UIImageView!
     var image: UIImage!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

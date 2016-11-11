@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE0BFFDB1DD4647A00064206 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BFFDA1DD4647A00064206 /* Common.swift */; };
 		CE0BFFDD1DD471DB00064206 /* CardsProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BFFDC1DD471DB00064206 /* CardsProfileViewController.swift */; };
+		CE0BFFDF1DD52D6E00064206 /* ImageTranstition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BFFDE1DD52D6E00064206 /* ImageTranstition.swift */; };
 		CE14299E1DD1B5340023CD3A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14299D1DD1B5340023CD3A /* FeedViewController.swift */; };
 		CE1429A01DD1B5490023CD3A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE14299F1DD1B5490023CD3A /* DetailViewController.swift */; };
 		CE1429A21DD2CFC50023CD3A /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1429A11DD2CFC50023CD3A /* CardsViewController.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		CE0BFFDA1DD4647A00064206 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		CE0BFFDC1DD471DB00064206 /* CardsProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsProfileViewController.swift; sourceTree = "<group>"; };
+		CE0BFFDE1DD52D6E00064206 /* ImageTranstition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTranstition.swift; sourceTree = "<group>"; };
 		CE14299D1DD1B5340023CD3A /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		CE14299F1DD1B5490023CD3A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CE1429A11DD2CFC50023CD3A /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				CE56CE361DD1238B00130045 /* week5Lab_tinder */,
 				CE56CE351DD1238B00130045 /* Products */,
 				CE56CE4D1DD130C300130045 /* BaseTransition.swift */,
+				CE0BFFDE1DD52D6E00064206 /* ImageTranstition.swift */,
 				CE56CE4E1DD130C300130045 /* FadeTransition.swift */,
 				CE0BFFDA1DD4647A00064206 /* Common.swift */,
 			);
@@ -171,6 +174,7 @@
 				CE56CE381DD1238B00130045 /* AppDelegate.swift in Sources */,
 				CE56CE501DD130C300130045 /* FadeTransition.swift in Sources */,
 				CE56CE4A1DD1243800130045 /* GreyViewController.swift in Sources */,
+				CE0BFFDF1DD52D6E00064206 /* ImageTranstition.swift in Sources */,
 				CE14299E1DD1B5340023CD3A /* FeedViewController.swift in Sources */,
 				CE0BFFDB1DD4647A00064206 /* Common.swift in Sources */,
 				CE0BFFDD1DD471DB00064206 /* CardsProfileViewController.swift in Sources */,

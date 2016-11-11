@@ -10,11 +10,14 @@ import UIKit
 
 class CardsViewController: UIViewController {
     
+    var imageTransition: ImageTranstition!
+    
     var cardInitialCenter: CGPoint!
     var cardOriginalCenter: CGPoint!
     
     
     @IBOutlet weak var mainPhoto: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cardOriginalCenter = CGPoint(x: mainPhoto.center.x, y: mainPhoto.center.y)
@@ -155,23 +158,34 @@ class CardsViewController: UIViewController {
     }
     
     @IBAction func didTapSegue(_ sender: UITapGestureRecognizer) {
-        var tappedImageView = sender.view as! UIImageView
-        mainPhoto = tappedImageView
+//        var tappedImageView = sender.view as! UIImageView
+//        mainPhoto = tappedImageView
         
+        mainPhoto = sender.view as! UIImageView
         performSegue(withIdentifier: "profileSegue", sender: self)
         sender.numberOfTapsRequired = 2
+        
+        
     }
-    
-    
- 
+
 
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         
         let profileViewController = segue.destination as! CardsProfileViewController
+        
+        profileViewController.modalPresentationStyle = .custom
+        
+        imageTransition = ImageTranstition()
+        
+        profileViewController.transitioningDelegate = imageTransition
+                
+        imageTransition.duration = 0.4
+        
         profileViewController.image = mainPhoto.image
-//        profileViewController.modalPresentationStyle = UIModalPresentationStyle.custom
-//        profileViewController.transitioningDelegate = self
+
+        
+
      }
     
     
